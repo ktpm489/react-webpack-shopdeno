@@ -1,0 +1,69 @@
+@import "compass/utilities"
+@import "compass/css3"
+.indexpage
+  padding-bottom: 0.8rem
+  .swapwrap
+    position:relative
+  .swipe-nav
+    position: absolute
+    bottom: 0.1rem
+    left: 0
+    right: 0
+    display: flex
+    justify-content: center
+    li
+      width: .8em
+      height: .8em
+      margin: 0 (8em/20)
+      +border-radius((20em/20))
+      background: #e5e5e5
+      opacity: .8
+      &.on
+        background: #ccc
+  .HeadSwiper
+    position: relative
+
+  .list
+    transform: translate3d(0, 0, 0)
+    background: #FFF
+    .item
+      display: flex
+      align-items: center
+      padding: (30rem/100) 0
+      border-bottom: 1px solid #F2F2F2
+    .section
+      &:last-child
+        .item
+          border: none
+    .info
+      flex: 1
+      margin-right: (20rem/100)
+    .img
+      width: (254rem/100)
+      height: (145rem/100)
+      position: relative
+      .ico
+        width: 100%
+      .tag
+        position: absolute
+        width: (120rem/100)
+        height: (120rem/100)
+        bottom: 0
+        left: (10rem/100)
+        opacity: .9 !important
+        z-index: 2
+    .name
+      font-size: (30rem/100)
+      color: #000
+      margin-bottom: (10rem/100)
+    .brief
+      font-size: (26rem/100)
+      line-height: (34rem/100)
+      color: #969696
+      margin-bottom: (12rem/100)
+    .price
+      font-size: (28rem/100)
+      color: #FE4900
+
+.cart-index-wrap
+  padding-bottom: 1.5rem
